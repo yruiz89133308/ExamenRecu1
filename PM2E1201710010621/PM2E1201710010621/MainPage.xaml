@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E1201710010621.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ver Lista" x:Name="toolbarmenu"
+                 IconImageSource="example_icon.png"
+                 Order="Primary"
+                 Priority="0"
+                 Clicked="toolbarmenu_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+        <Image Source="logo.png"
+               HeightRequest="150"
+               HorizontalOptions="Center"/>
+
+        <Label Text="DATOS DE UBICACIÓN"  HorizontalOptions="Center" FontAttributes="Bold" FontSize="Title"/>
+        <Label Text="Latitud" Margin="20,20,0,0" FontSize="Large"/>
+        <Entry Text=" " Keyboard="Numeric" x:Name="txtLatitud" FontSize="Medium"/>
+            <Label Text="Longitud" Margin="20,20,0,0" FontSize="Large"/>
+            <Entry Text=" " Keyboard="Numeric" x:Name="txtLongitud" FontSize="Medium"/>
+                 <Label Text="Decribir Ubicación" Margin="20,20,10,0" FontSize="Large"/>
+                 <Entry Text=" " x:Name="txtdescripcion"/>
+                        <Label Text="Ubicación" Margin="20,20,0,0" FontSize="Large"/>
+                        <Entry Text=" " x:Name="txtNomUbicacion"/>
+     
+
+        <Button Text="Salvar Ubicacion" x:Name="btnSalvar" Clicked="btnSalvar_Clicked" Margin="25,0,25,0" BackgroundColor="Black" TextColor="Green" FontSize="Title" />
+        <Button Text="Ubicacion Salvada" x:Name="BtnSalvadas" Clicked="BtnSalvadas_Clicked" Margin="25,0,25,0" BackgroundColor="Black" TextColor="Green" FontSize="Title"/>
+    </StackLayout>
+
+</ContentPage>
